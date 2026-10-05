@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+
+:root {
+    --negro: #111111;
+    --blanco: #ffffff;
+    --gris: #f3f3f3;
+    --acento: #ff5a36;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--gris);
+    color: var(--negro);
+}
+
+.navbar {
+    background-color: var(--negro);
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    margin-right: 10px;
+    background: var(--acento);
+    color: white;
+    font-weight: 800;
+    font-size: 24px;
+    border-radius: 50%;
+}
+
+.carousel-item img {
+    height: 560px;
+    object-fit: cover;
+    filter: brightness(0.55);
+}
+
+.carousel-caption {
+    bottom: 25%;
+}
+
+.carousel-caption h1 {
+    font-size: clamp(2rem, 5vw, 4.5rem);
+    font-weight: 800;
+}
+
+.btn-nexo {
+    background-color: var(--acento);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-weight: 700;
+}
+
+.btn-nexo:hover {
+    background-color: #e44725;
+    color: white;
+}
+
+.saludo {
+    color: var(--acento);
+    font-weight: 700;
+}
+
+.card,
+.info-box {
+    border: none;
+    border-radius: 14px;
+}
+
+.info-box {
+    height: 100%;
+    padding: 28px;
+    background: white;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+}
+
+footer {
+    background: var(--negro);
+    color: white;
+    padding: 30px 0;
+    margin-top: 40px;
+}
+
+#volverArriba {
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background: var(--acento);
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 450px;
+    }
+}
